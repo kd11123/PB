@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>파리바게뜨</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/palogo.png" type="image/icon">
+    <!-- 부트스트랩 css cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- swiper css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- 어썸 아이콘 cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- 외부 css -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/media_main.css" type="text/css">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- 부트스트랩 js cdn -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- swiper js cdn -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- 외부 js -->
+    <script src="js/main.js"></script>
+    <!-- 구글지도 api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=ko"></script> 
+  
+<script> 
+  function initialize() { 
+var myLatlng = new google.maps.LatLng(37.304905, 127.024986); // 좌표값
+  var mapOptions = { 
+        zoom: 14, // 지도 확대레벨 조정
+        center: myLatlng, 
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+  } 
+  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions); 
+  var marker = new google.maps.Marker({ 
+position: myLatlng, 
+map: map, 
+title: "회사명" // 마커에 마우스를 올렸을때 간략하게 표기될 설명글
+}); 
+  } 
+window.onload = initialize;
+</script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header_wrap">
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">PB MAGAZINE</a>
+                        </li>
+                        <li>
+                            <a href="#">PB STORY</a>
+                        </li>
+                        <li>
+                            <a href="#">PBODUCTS</a>
+                            <ul class="sub">
+                                <li><a href="#">브레드</a></li>
+                                <li><a href="#">케이크</a></li>
+                                <li><a href="#">간식/디저트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">STORE</a>
+                        </li>
+                        <li>
+                            <a href="#">DELIVERY</a>
+                        </li>
+                        <li>
+                            <a href="#">PROMOTION</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu">
+                    <a href="#"></a>
+                </div>
+                <!-- 서브메뉴 배경 -->
+                <div class="sub_bg"></div>
+            </div>
+        </header>
+        <section class="s1">
+                <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide main1">
+                    <div class="main_txt">
+                        <h1>1월 파바데이 이벤트</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide main2">
+                    <div class="main_txt">
+                        <p>파리바게뜨 x 논산딸기</p>
+                        <h1>행복상생 프로젝트</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide main3">
+                    <div class="main_txt">
+                        <p>파바에서 만나는</p>
+                        <h1>가평 만남샌드</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+      </div>
+        </section>
+        <section class="s2">
+            <div class="center container">
+                <div class="row">
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 happy_txt">
+                        <h1>HAPPY NEW YEAR <br>
+                            <br>
+                            2022년 새해가<br>
+                            밝았습니다!</h1>
+                            <br>
+                            <p>2022년, 라이언 복돌이 케이크와
+                                상큼 달달한 시작은<br><br>어떠실까요?</p>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 happy_img">
+                        <img src="img/bennr.png" alt="라이언 케이크 배너">
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="s3">
+            <div class="center">
+                <h1 class="fade_animation">BEST 상품</h1>
+                <div class="porduct up_animation">
+                        <!-- Swiper -->
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide p1">
+                                <div class="p_top">
+                                    <h3>식빵</h3>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="p_bottom">
+                                    <div class="p_left">
+                                        <h3>밤식빵</h3>
+                                        <p>달콤고소 밤식빵</p>
+                                    </div>
+                                    <div class="p_right">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide p2">
+                                <div class="p_top">
+                                    <h3>고로케</h3>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="p_bottom">
+                                    <div class="p_left">
+                                        <h3>야채감자고로케</h3>
+                                        <p>바삭하고 부드러운 고로케</p>
+                                    </div>
+                                    <div class="p_right">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide p3">
+                                <div class="p_top">
+                                    <h3>도넛</h3>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="p_bottom">
+                                    <div class="p_left">
+                                        <h3>꽈배기 도넛</h3>
+                                        <p>옛날에 먹던 꽈배기도넛</p>
+                                    </div>
+                                    <div class="p_right">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide p4">
+                                <div class="p_top">
+                                    <h3>페스츄리</h3>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="p_bottom">
+                                    <div class="p_left">
+                                        <h3>치즈소세지페스츄리</h3>
+                                        <p>뽀득뽀득 소세지</p>
+                                    </div>
+                                    <div class="p_right">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s4">
+            <div class="center container">
+                <h1 class="fade_animation">파리바게뜨<br>상생프로젝트</h1>
+                <div class="row">
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 s4_left">
+                        <div class="s4_img s4_ani1">
+                            <img src="img/4.png" alt="인삼빵">
+                        </div>
+                        <div class="s4_des s4_ani2">
+                            <h3>파리바게뜨 X 풍기 인삼<br>
+                                행복상생 프로젝트</h3>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 s4_right">
+                        <div class="s4_img s4_ani3">
+                            <img src="img/on.png" alt="양파빵">
+                        </div>
+                        <div class="s4_des s4_ani4">
+                            <h3>파리바게뜨 X 무안 양파<br>
+                                행복상생 프로젝트</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s5">
+            <div class="center">
+                <div class="acc up_animation">
+                    <div class="acc_item acc1">
+                        <h1>PB Season</h1>
+                        <p>파리바게트
+                            따끈한 시즌메뉴</p>
+                    </div>
+                    <div class="acc_item acc2">
+                        <h1>PB Bakery</h1>
+                        <p>따끈따끈 갓 구운
+                            파리바게뜨 베이커리</p>
+                    </div>
+                    <div class="acc_item acc3 active">
+                        <h1>PB Instagram</h1>
+                        <p>우리의 라이언 복돌이 케이크가
+                            소원을 들어준다고 합니다!</p>
+                    </div>
+                    <div class="acc_item acc4">
+                        <h1>PB Story</h1>
+                        <p>파리핏플 리정을 위해
+                            파바가 열어준 크리스마스 파티!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s6">
+            <div class="center">
+                <div class="list">
+                    <ul>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/insta.png" alt="인스타그램">
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/insta1.jpg" alt="인스타그램">
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/insta2.jpg" alt="인스타그램">
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/insta3.jpg" alt="인스타그램">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/insta4.jpg" alt="인스타그램">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/insta5.jpg" alt="인스타그램">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/insta6.jpg" alt="인스타그램">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/insta7.jpg" alt="인스타그램">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s7">
+            <div id="map_canvas"></div>
+            <div class="s7_addr up_animation">
+                <div class="s7_img">
+                    <div class="s7_icon"></div>
+                </div>
+                <div class="s7_info">
+                    <h1>파리바게뜨 본사</h1>
+                    <address>
+                        경기도 성남시 중원구 상대원동<br>
+사기막골로 31번길 18 <br>
+(주) 파리크라상
+                    </address>
+                    <div class="go">
+                        <h2>고객센터</h2>
+                        <div class="tel_number">
+                            <b>080-731-2027</b>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <p>평일 09:00 - 17:00 (점심 12:00 - 13:00)</p> <br>
+                        <br>
+                        <span>고객의 소리에 적극 경청하고<br>
+                            고객만족 향상을 위해 노력하겠습니다.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                <div class="footer_logo">
+                    <a href="#"><img src="img/white_logo.png" alt="로고"></a>
+                </div>
+                <div class="footer_txt">
+                    <b>
+                        주식(主食)부터 카페문화까지<br>
+1988년에 최초 론칭한 파리바게뜨는 국내에<br>
+유럽풍 베이커리 문화를 처음 소개하고 발전시키며<br>
+대한민국 베이커리 시장을 선도해온 프리미엄 베이커리 브랜드입니다.
+                        <br>
+</b>
+                    <p>
+                        <br>
+                        All Rights Reserved © PARIS BAGUETTE, PARIS CROISSANT CO.
+                    </p>
+                </div>
+                <div class="footer_site">
+                    <div class="sns">
+                        <ul>
+                            <li><a href="#"><img src="img/instalogo.png" alt="인스타그램"></a></li>
+                            <li><a href="#"><img src="img/youtube.png" alt="유튜브"></a></li>
+                        </ul>
+                    </div>
+                    <div class="family">
+                        <a href="#" class="fa_btn">Family Site
+                            <span>></span>
+                        </a>
+                        <a href="#">파리크라상</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- top 버튼 -->
+        <div class="top">TOP</div>
+    </div>
+    <!-- 사이트맵 -->
+    <div class="sitemap">
+        <div class="site_logo">
+            <img src="img/white_logo.png" alt="사이트맵 로고">
+            
+        </div>
+        <div class="site_close">
+            <a href="#"><img src="img/close.png" alt="닫기"></a>
+        </div>
+        <nav class="site_nav">
+            <ul>
+                <li>
+                    <a href="#">PB MAGAZINE</a>
+                </li>
+                <li>
+                    <a href="#">PB STORY</a>
+                </li>
+                <li>
+                    <a href="#">PBODUCTS</a>
+                    <ul class="sub">
+                        <li><a href="#">브레드</a></li>
+                        <li><a href="#">케이크</a></li>
+                        <li><a href="#">간식/디저트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">STORE</a>
+                </li>
+                <li>
+                    <a href="#">DELIVERY</a>
+                </li>
+                <li>
+                    <a href="#">PROMOTION</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="site_sns">
+            <ul>
+                <li>
+                    <a href="#"><img src="img/instalogo.png" alt="인스타그램"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/youtube.png" alt="유튜브"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

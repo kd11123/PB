@@ -1,0 +1,719 @@
+/* 노트북 */
+@media screen and (max-width:1600px){
+    
+}
+
+
+/* 태블릿버전 */
+@media screen and (max-width:1199px){
+    header {
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    header .header_wrap {
+        padding: 1.8vw 10vw;
+    }
+    header .logo {
+    width: 16.3vw;
+    }
+    header .header_wrap nav {
+        display: none;
+    }
+    header .header_wrap .menu {
+        width: 3vw;
+        height: 3vw;
+    }
+    section {height: auto;}
+    section.s1 {height: 100vh;}
+    section.s1 .swiper .swiper-slide .main_txt {
+        line-height: 4.5vw;
+    }
+    section.s1 .swiper .swiper-slide .main_txt h1 {
+        font-size: 3.5vw;
+    }
+    section.s1 .swiper .swiper-slide .main_txt p {
+        font-size: 1.8vw;
+    }
+    /* 태블릿 s2 */
+    section.s2 .center {
+        width: 80vw;
+    }
+    section.s2 .happy_txt h1 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 5vw
+    }
+    section.s2 .happy_txt p {
+        line-height: 2vw;
+        text-align: center;
+        font-size: 2vw;
+        margin-bottom: 15vw;
+    }
+    /* 태블릿 s3 */
+    section.s3 {height: 100vh;}
+    section.s3 .center {
+        width: 100%;
+    }
+    section.s3 .swiper {
+        height: 41vw;
+    }
+    section.s3 .swiper .swiper-slide {
+        height: 37vw;
+    }
+    section.s3 .swiper .swiper-slide h3 {
+        font-size: 1.6vw;
+    }
+    section.s3 .swiper .swiper-slide .p_bottom h3 {
+        font-size: 1.6vw;
+        padding-bottom: 0.5vw;
+    }
+    section.s3 .swiper .swiper-slide p {
+        font-size: 1.4vw;
+    }
+    /* swiper 슬라이드 스크롤 바 보임 */
+    section.s3 .swiper .swiper-scrollbar {
+        display: block;
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    section.s3 .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+        background-color: orange;
+    }
+    section.s3 .swiper .swiper-slide:nth-child(odd){
+        margin-top: 0;
+    }
+    /* section.s4  */
+    section.s4 .center {
+        width: 96%;
+        margin: 0 auto;
+    }
+    section.s4 .center > h1 {
+        right: 50%;
+        transform: translateX(50%);
+        top: 0;
+    }
+    section.s4 .center .row .col-sm-12 {
+        height: auto;
+    }
+    section.s4 .center .row .col-sm-12 .s4_img {
+        width: 100%;
+        margin-top: 20vw;
+    }
+    section.s4 .center .row .col-sm-12 .s4_des {
+        padding-top: 1.4vw;
+        height:20vw;
+    }
+    section.s4 .center .row .col-sm-12 .s4_des h3 {
+        font-size: 3vw;
+        line-height:5vw;
+        margin-bottom: 3vw;
+    }
+    section.s4 .center .row .s4_left .s4_des {
+        right: 0;
+        bottom: 0;
+        position:relative;
+        width:100%;
+    }
+    section.s4 .center .row .s4_right .s4_des {
+        /* left: 49vw; */
+        left: 0;
+        bottom: 0;
+        text-align: left;
+        position:relative;
+        width:100%;
+    }
+    section.s4 .center .row .s4_right .s4_img {
+        float: left;
+    }
+
+    /* s4 애니메이션 */
+    section.s4 .s4_ani3 {
+        margin-left: -5vw;
+        opacity: 0;
+        transition: all 1s;
+        transition-delay: 1s;
+    }
+    section.s4 .s4_ani3.active {
+        opacity: 1;
+        margin-left: 0;
+    }
+    section.s4 .s4_ani4 {
+        margin-left:0vw;
+        opacity: 0;
+        right: 0vw;
+        transition: all 1s;
+        transition-delay: 1.5s;
+    }
+    section.s4 .s4_ani4.active {
+        opacity: 1;
+        right: 7.5vw;
+    }
+    /* section.s5 */
+    section.s5 {
+        padding-top: 15vw;
+    }
+    section.s5 .center {
+        width: 100%;
+        margin: 0 auto;
+    }
+    section.s5 .center .acc {
+        flex-flow: row wrap;
+    }
+    section.s5 .center .acc .acc_item {
+        width: 49%;
+        margin-bottom: 2.1vw;
+    }
+    section.s5 .center .acc .acc_item span {
+        font-size: 2vw;
+    }
+    section.s5 .center .acc .acc_item h1 {
+        font-size: 2.6vw;
+    }
+    /* section.s6 */
+    section.s6 {
+        padding-bottom: 5vw;
+    }
+    section.s6 .center {
+        width: 96%;
+        margin: 0 auto;
+        margin-top: 10vw;
+    }
+    section.s6 .center .list ul li {
+        width: 31%;
+        margin-bottom: 5vw;
+    }
+    section.s6 .center .list ul li:first-child {
+        display: none;
+    }
+    section.s6 .center .list ul li:last-child {
+        display: none;
+    }
+    section.s7 {
+        height: 130vh;
+        background-color: #efefef;
+    }
+    /* 지도영역 */
+    section.s7 #map_canvas {
+        width: 100%;
+        height: 60vh;
+    }
+    section.s7 .s7_addr {
+        top: 25vw;
+        width: 70%;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-flow: column nowrap; /* 자식객체를 위아래로 정렬 */
+    }
+    section.s7 .s7_addr .s7_img {
+        width: 100%;
+        height: 30vw;
+    }
+    section.s7 .s7_addr .s7_info p {
+        font-size: 2vw;
+    }
+    section.s7 .s7_addr .s7_info {
+        padding: 2vw 3vw;
+        text-align: center;
+    }
+    section.s7 .s7_addr .s7_info address {
+        font-size: 2vw;
+    }
+    section.s7 .s7_addr .s7_info span{
+        font-size: 2vw;
+        font-weight: bold;
+    }
+    section.s7 .s7_addr .s7_info h1 {
+        margin-bottom: 3vw;
+
+    }
+    /* footer  푸터*/
+    footer .center {
+        width: 100%;
+        padding: 3vw 0;
+        flex-flow: column nowrap;
+    }
+    footer .center .footer_logo {
+        bottom: 3vw;
+        order:3;  /* 3번째로 나열 display flex와 같이 사용 */
+        
+        margin: 0 auto;
+    }
+    footer .center .footer_txt {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        font-size: 2vw;
+        line-height: 3vw;
+        margin-bottom: 3vw;
+    }
+    footer .center .footer_site {
+        order: 1;
+        height: 5vw;
+        width: 50vw;
+        margin: 0 auto;
+        margin-bottom: 7vw;
+    }
+    footer .center .footer_site .sns ul li {
+        width: 5vw;
+    }
+    footer .center .footer_site .sns ul li img {
+        width: 4vw;
+        height: auto;
+        margin-bottom: 3vw;
+    }
+    footer .center .footer_site .family {
+        height: 4vw;
+    }
+    footer .center .footer_site .family a {
+        font-size: 1.4vw;
+    }
+    footer .center .footer_site .family a:first-child {
+        font-size: 1.4vw;
+        padding-left: 2.6vw;
+    }
+    footer .center .footer_site .family.active {
+        height: 8vw;
+    }
+    /* site map 주메뉴 */
+    .sitemap {
+        top: 0;
+        right: -100vw;
+        left: auto;
+        opacity: 1;
+        padding: 4vw 8vw;
+        overflow-y: auto;
+    }
+    .sitemap.active {
+        right: 0;
+    }
+    .sitemap .site_logo {
+        float: left;
+        width: 12vw;
+    }
+    .sitemap .site_close {
+        width: 2vw;
+    }
+    .site_nav {
+        margin-top: 10vw;
+        width: 100%;
+    }
+    .sitemap .site_nav ul {
+        flex-flow: column nowrap;
+    }
+    .sitemap .site_nav ul li a {
+        font-size: 2.4vw;
+        text-align: left;
+        color: #eee;
+        padding: 2vw 0;
+        border-bottom: 1px solid #fff;
+    }
+    .sitemap .site_nav .sub{
+        padding: 2vw 0;
+        display: none;
+        border-bottom: 1px solid #fff;
+    }
+    .sitemap .site_nav .sub li {
+        margin: 0;
+    }
+    .sitemap .site_nav .sub li a {
+        font-size: 2vw;
+        text-align: left;
+        color: #eee;
+        display: block;
+        border-bottom:none;
+        padding: 0.5vw;
+    }
+    .sitemap .site_nav > ul > li:hover > a:after {
+        width: 0;
+    }
+    .sitemap .site_nav > ul > li a:active {
+        color: orange;
+    }
+
+
+
+
+}
+/* 모바일 버전 */
+@media screen and (max-width:360px){
+        header .logo {
+        width: 25vh;
+        margin-top: 4vw;
+        }
+        header .header_wrap nav {
+            display: none;
+        }
+        header .header_wrap .menu {
+            width: 10vw;
+            height: 10vw;
+            margin-top: 7vw;
+        }
+        section {
+            height: 100vh;
+        }
+        section.s1 .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        section.s1 .swiper-slide {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        section.s1 {
+            height: 100vh;
+        }
+        section.s1 .swiper .swiper-slide .main_txt {
+            line-height: 4.5vw;
+        }
+        section.s1 .swiper .swiper-slide .main_txt h1 {
+        font-size: 7vw;
+        }
+        section.s1 .swiper .swiper-slide .main_txt p {
+        font-size: 4vw;
+        }
+        section.s1 .swiper .swiper-button-next,
+        section.s1 .swiper .swiper-button-prev {
+            display: none;
+        }
+        /* section.2 */
+
+        section.s2 .center {
+            width: 98vw;
+        }
+        section.s2 .center .row {
+            margin-left: 0;
+        }
+        section.s2 .happy_txt h1 {
+            text-align: center;
+            font-size: 6vw;
+            margin-bottom: 5vw
+        }
+        section.s2 .happy_txt p {
+            line-height: 5vw;
+            text-align: center;
+            font-size: 4vw;
+            margin-bottom: 15vw;
+        }
+
+        /* section.s3 */
+        section.s3 {height: 85vh;}
+        section.s3 .center {
+            width: 100%;
+        }
+        section.s3 h1 {
+            margin: 10vw;
+        }
+        section.s3 .swiper {
+            height: 70vw;
+        }
+        section.s3 .swiper .swiper-slide {
+            height: 60vw;
+            padding: 3vw 4vw;
+        }
+        section.s3 .swiper .swiper-slide .p_top {
+            height: 10vw;
+            margin-bottom: 38vw;
+        }
+        section.s3 .swiper .swiper-slide h3 {
+            font-size: 3.6vw;
+        }
+        section.s3 .swiper .swiper-slide .p_bottom h3 {
+            font-size: 3vw;
+            margin-top: 4vw;
+        }
+        section.s3 .swiper .swiper-slide p {
+            font-size: 1.4vw;
+            display: none;
+        }
+        /* swiper 슬라이드 스크롤 바 보임 */
+        section.s3 .swiper .swiper-scrollbar {
+            display: block;
+            width: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        section.s3 .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+            background-color: orange;
+        }
+        section.s3 .swiper .swiper-slide:nth-child(odd){
+            margin-top: 0;
+        }
+        /* section.s4  */
+        section.s4 {
+            height: 130vh;
+        }
+    section.s4 .center {
+        width: 96%;
+        margin: 0 auto;
+    }
+    section.s4 .center > h1 {
+        font-size: 7vw;
+        margin-top: 10vw;
+    }
+    section.s4 .center .row {
+        margin-top: 30vw;
+    }
+    section.s4 .center .row .col-sm-12 {
+        padding:5vw 0;
+    }
+    section.s4 .center .row .col-sm-12 .s4_img {
+        width: 100%;
+        margin-top: 15vw;
+        margin: 0 auto;
+    }
+    section.s4 .center .row .s4_left .s4_des {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: relative;
+        width: 80%;
+        height:28vw;
+        margin: 0 auto;
+    }
+    section.s4 .center .row .s4_right .s4_des {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: relative;
+        width: 80%;
+        height:28vw;
+        margin: 0 auto;
+    }
+    section.s4 .center .row .col-sm-12 .s4_des h3 {
+        font-size: 5vw;
+        line-height:8vw;
+        margin-bottom: 10vw;
+    }
+    section.s4 .center .row .s4_left .s4_des {
+        right: 8vw;
+        bottom: 0;
+        width:100%;
+    }
+    section.s4 .center .row .s4_right .s4_des {
+        /* left: 49vw; */
+        left: auto;
+        bottom: 0;
+        text-align: left;
+        width:100%;
+    }
+    section.s4 .center .row .s4_right .s4_img {
+        float: left;
+    }
+
+    /* s4 애니메이션 */
+    section.s4 {
+        height: 150vh;
+    }
+    section.s4 .s4_ani3 {
+        margin-left: -5vw;
+        opacity: 0;
+        transition: all 1s;
+        transition-delay: 1s;
+    }
+    section.s4 .s4_ani3.active {
+        opacity: 1;
+        margin-left: 0;
+    }
+    section.s4 .s4_ani4 {
+        margin-left:0vw;
+        opacity: 0;
+        right: 0vw;
+        transition: all 1s;
+        transition-delay: 1.5s;
+    }
+    section.s4 .s4_ani4.active {
+        opacity: 1;
+        right: 7.5vw;
+    }
+    /* section.s5 */
+    section.s5 {
+        padding-top: 15vw;
+        height: 300vw;
+    }
+    section.s5 .center {
+        width: 100%;
+        margin: 0 auto;
+    }
+    section.s5 .center .acc {
+        flex-flow: row wrap;
+    }
+    section.s5 .center .acc .acc_item {
+        width: 100%;
+        height: 70vw;
+        margin-bottom: 2.1vw;
+        padding-top: 30vw;
+    }
+    section.s5 .center .acc .acc_item span {
+        font-size: 4vw;
+    }
+    section.s5 .center .acc .acc_item h1 {
+        font-size: 3.2vw;
+    }
+    /* section.s6 */
+    section.s6 {
+        /* padding-bottom: 5vw; */
+        padding: 15vw;
+    }
+    section.s6 .center {
+        width: 96%;
+        margin: 0 auto;
+        margin-top: 8vw;
+    }
+    section.s6 .center .list ul li {
+        width: 49%;
+        margin-bottom: 3vw;
+    }
+
+
+    section.s7 {
+        height: 130vh;
+        background-color: #efefef;
+    }
+    section.s7 .s7_addr {
+        top: 40vh;
+        width: 90%;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-flow: column nowrap; /* 자식객체를 위아래로 정렬 */
+    }
+    section.s7 .s7_addr .s7_img {
+        width: 100%;
+        height: 40vw;
+    }
+    section.s7 .s7_addr .s7_info p {
+        font-size: 4vw;
+    }
+    section.s7 .s7_addr .s7_info b {
+        font-size: 6vw;
+    }
+    section.s7 .s7_addr .s7_info {
+        padding: 2vw 3vw;
+        text-align: center;
+    }
+    section.s7 .s7_addr .s7_info address {
+        font-size: 4vw;
+    }
+    section.s7 .s7_addr .s7_info span{
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    section.s7 .s7_addr .s7_info h1 {
+        margin-bottom: 3vw;
+
+    }
+
+
+    /* footer  푸터*/
+
+
+    footer .center {
+        width: 100%;
+        padding: 3vw 0;
+        flex-flow: column nowrap;
+    }
+    footer .center .footer_logo {
+        bottom: 3vw;
+        order:3;  /* 3번째로 나열 display flex와 같이 사용 */
+        
+        margin: 0 auto;
+    }
+    footer .center .footer_txt {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-bottom: 3vw;
+        margin-top: 5vw;
+    }
+    footer .center .footer_site {
+        order: 1;
+        height: 5vw;
+        width: 50vw;
+        margin: 0 auto;
+        margin-bottom: 7vw;
+    }
+    footer .center .footer_site .sns ul li {
+        width: 5vw;
+    }
+    footer .center .footer_site .sns ul li img {
+        width: 4vw;
+        height: auto;
+        margin-bottom: 20vw;
+    }
+    footer .center .footer_site .family {
+        height: 6vw;
+        border-radius: 14px;
+    }
+    footer .center .footer_site .family a {
+        font-size: 2.2vw;
+        padding: 1.5vw;
+    }
+    footer .center .footer_site .family a:first-child {
+        font-size: 2.4vw;
+        padding-left: 3.6vw;
+    }
+    footer .center .footer_site .family.active {
+        height: 14vw;
+    }
+    /* site map 주메뉴 */
+    .sitemap {
+        top: 0;
+        right: -100vw;
+        left: auto;
+        opacity: 1;
+        padding: 4vw 8vw;
+        overflow-y: auto;
+    }
+    .sitemap.active {
+        right: 0;
+    }
+    .sitemap .site_logo {
+        float: left;
+        width: 12vw;
+    }
+    .sitemap .site_close {
+        width: 2vw;
+    }
+    .site_nav {
+        margin-top: 10vw;
+        width: 100%;
+    }
+    .sitemap .site_nav ul {
+        flex-flow: column nowrap;
+    }
+    .sitemap .site_nav ul li a {
+        font-size: 2.4vw;
+        text-align: left;
+        color: #eee;
+        padding: 2vw 0;
+        border-bottom: 1px solid #fff;
+    }
+    .sitemap .site_nav .sub{
+        padding: 2vw 0;
+        display: none;
+        border-bottom: 1px solid #fff;
+    }
+    .sitemap .site_nav .sub li {
+        margin: 0;
+    }
+    .sitemap .site_nav .sub li a {
+        font-size: 2vw;
+        text-align: left;
+        color: #eee;
+        display: block;
+        border-bottom:none;
+        padding: 0.5vw;
+    }
+    .sitemap .site_nav > ul > li:hover > a:after {
+        width: 0;
+    }
+    .sitemap .site_nav > ul > li a:active {
+        color: orange;
+    }
+
+}
